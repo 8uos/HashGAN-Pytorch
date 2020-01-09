@@ -71,7 +71,11 @@ There are some possible additional arguments:
   
 ### Evaluate
 
-`python HashGAN.py --eval --G_dict=Path/to/generator/dict/to/evaluate --D_dict=Path/to/discriminator/dict/to/evaluate`
+```
+python HashGAN.py --eval \
+                  --G_dict=Path/to/generator/dict/to/evaluate \
+                  --D_dict=Path/to/discriminator/dict/to/evaluate
+```
 
 The possible additional arguments are identical to the ones above.
 
@@ -136,6 +140,10 @@ The possible additional arguments are identical to the ones above.
 * Discriminator ***(class)***
 
     The definition of the model of discriminator and encoder network.
+    
+    
+## References
+* K.dizaji, F.Zheng, N.Nourabadi, Y.Yang, C.Deng, H.Huang. “Unsupervised Deep Generative Adversarial Hashing Network”, CVPR, 2018.
 
   
 
