@@ -7,7 +7,7 @@
 
 ### Performance
 
-해당 코드로 실험했을 때, precision@1000 기준으로 MNIST에서 0.36-0.44, CIFAR10에서 0.22-0.30 의 성능을 보였다. 이는 논문에서 제시하는 결과보다 많이 떨어지는 수치이다. 이는 Encoder network가 잘 학습되지 못했기 때문이라고 의심된다. 학습이 진행되었을 때 Generator가 생성한 이미지의 질도 충분히 좋은 편이며, Discriminator의 마지막 hidden layer의 feature도 좋은 특성을 가진다. 생성 이미지와 hidden layer feature의 그림을 함께 첨부하였다. (generated_{dataset}.png, D_feat_{dataset}.png)
+해당 코드로 실험했을 때, precision@1000 기준으로 MNIST에서 0.36-0.44, CIFAR10에서 0.22-0.30 의 성능을 보였다. 이는 논문에서 제시하는 결과보다 많이 떨어지는 수치이다. 이는 Encoder network가 잘 학습되지 못했기 때문이라고 의심된다. 학습이 진행되었을 때 Generator가 생성한 이미지의 질도 충분히 좋은 편이며, Discriminator의 마지막 hidden layer의 feature도 좋은 특성을 가진다. 생성 이미지와 hidden layer feature의 그림을 함께 첨부하였다. (imgs/generated_{dataset}.png, imgs/D_feat_{dataset}.png)
 따라서 Generator와 Discriminator는 충분히 학습되었다고 볼 수 있다. 
 
 Encoder 성능을 올리기 위해 1)Loss weight 조절, 2)Minimum entropy loss, Uniform frequency loss form 변경 을 시도해 보았으나, 둘 다 성능이 크게 향상되지는 않았다. 다만, 논문에서는 weight 조절을 하지 않았다고 하였으나 weight 조절에 따른 성능 변화는 무시할 수 없는 수준이었다(~5%). 이러한 문제를 해결하기 위해 저자에게 연락을 시도하였으나 답변을 받지는 못했다.
