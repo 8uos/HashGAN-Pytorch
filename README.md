@@ -31,7 +31,7 @@ This is a pytorch implementation of [***Unsupervised Deep Generative Adversarial
 
 Run this in terminal:
 
-`git clone https://github.com/8uos/HashGAN-pytorch`
+`git clone https://github.com/8uos/HashGAN-Pytorch`
 
 * * *
 
