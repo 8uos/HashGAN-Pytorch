@@ -71,7 +71,11 @@ There are some possible additional arguments:
   
 ### Evaluate
 
-`python HashGAN.py --eval --G_dict=Path/to/generator/dict/to/evaluate --D_dict=Path/to/discriminator/dict/to/evaluate`
+```
+python HashGAN.py --eval \
+                   --G_dict=Path/to/generator/dict/to/evaluate \
+                   --D_dict=Path/to/discriminator/dict/to/evaluate
+```
 
 The possible additional arguments are identical to the ones above.
 
