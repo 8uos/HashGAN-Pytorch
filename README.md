@@ -140,6 +140,10 @@ The possible additional arguments are identical to the ones above.
 * Discriminator ***(class)***
 
     The definition of the model of discriminator and encoder network.
+    
+    
+## References
+* K.dizaji, F.Zheng, N.Nourabadi, Y.Yang, C.Deng, H.Huang. “Unsupervised Deep Generative Adversarial Hashing Network”, CVPR, 2018.
 
   
 
